@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const botonDescargar = document.getElementById("descargar");
 
     botonDescargar.addEventListener("click", function () {
-        const urlArchivo = "/assets/images/CV_Martin_Fernandez.pdf";
+        const urlArchivo = "assets/images/CV_Martin_Fernandez.pdf";
 
         const enlaceDescarga = document.createElement("a");
         enlaceDescarga.href = urlArchivo;

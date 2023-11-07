@@ -203,7 +203,7 @@ h3 a {
 #contact {
     text-align: center;
     padding: 20px;
-    background-image: url('/assets/images/back-fornm.jpg');
+    background-image: url('assets/images/back-fornm.jpg');
     background-size: cover;
     background-position: center;
     color: #fff; 
