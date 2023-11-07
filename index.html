@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<div class="navbar">
+    <a href="#about-me">Sobre mí</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contacto">Contactame</a>
+</div>
+
+<section class="gradient-section">
+    <h1>martinfdez<span class="dev-gradient">Dev</span></h1>
+    <h2 id="typing-text">Convierto tu creatividad en código</h2>
+    <h3><a href="https://www.linkedin.com/in/martinfdez-dev/" target="_blank">
+        <img src="assets/icons/linkedin.png" alt="logo linkedin" width="50">
+    </a>
+        <a href="https://github.com/ParanoiidAndroid" target="_blank">
+            <img src="assets/icons/github.png" alt="logo github" width="50">
+        </a>
+        </h3>
+        <button class="button-cv" id="descargar">
+            <span>Descargar CV</span>
+        </button>
+
+</section>
+
+<section class="about-me" id="about-me">
+    <h2>Sobre Mí</h2>
+    <div class="text-about-me"></div>
+    <p class="centered-paragraph">¡Hola! Me llamo Martín y soy un desarrollador frontend trainee apasionado por la tecnología y la programación, me considero una persona centrada, paciente y con muchas ganas de aprender constantemente. Empecé dando mis primeros pasos en la programación en 2021 con Python y en 2022 profundice en el lenguaje usándolo en la facultad. En 2023 me anoté a las becas que ofrece la Fundación Empujar, por la cual pasé entrevistas y pruebas técnicas quedando seleccionado con un poco más de 100 personas de entre más de 4000 aspirantes a la beca, esto me significó poder cursar la Diplomatura de Desarrollo Web Full Stack en la UTN (Universidad Nacional Tecnológica) además de recibir clases de empleabilidad por parte de la misma fundación, lo que significó un antes un después para mi. 
+    Actualmente no cuento con experiencia en el mundo IT, pero tengo muchas ganas de tener mi primera oportunidad laboral en este rubro.
+        </p>
+    </div>
+    <h3>Habilidades</h3>
+    <div class="carousel">
+      <div class="card">
+        <img src="/assets/icons/html-icon.png" alt="icon html" width="70">
+        <p>HTML</p>
+      </div>
+      <div class="card">
+        <img src="/assets/icons/css-icon.png" alt="icon css" width="70">
+        <p>CSS</p>
+      </div>
+      <div class="card">
+        <img src="/assets/icons/js.png" alt="icon javascript" width="70">
+        <p>Javascript</p>
+      </div>
+      <div class="card">
+        <img src="/assets/icons/python-icon.png" alt="icon python" width="70">
+        <p>Python</p>
+      </div>
+      <div class="card">
+        <img src="/assets/icons/ts-icon.png" alt="icon typescript" width="89">
+        <p>Typescript</p>
+      </div> <div class="card">
+        <img src="/assets/icons/git-icon.png" alt="icon git" width="70">
+        <p>git</p>
+    </div> <div class="card">
+        <img src="/assets/icons/sql-icon.png" alt="icon sql" width="70">
+        <p>MySQL</p>
+    </div> <div class="card">
+        <img src="/assets/icons/react-icon.png" alt="icon react" width="70">
+        <p>React</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="portfolio">
+    <h3 class="centered">Portfolio</h3>
+    <div class="box">
+        <div class="image">
+            <img src="tu_imagen.jpg" alt="Imagen de tu proyecto">
+        </div>
+        <div class="content">
+            <h4>ecommerce zapatos</h4>
+            <p>Descripción de tu proyecto.</p>
+        </div>
+    </div>
+    <div class="box">
+        <div class="image">
+            <img src="tu_imagen.jpg" alt="Imagen de tu proyecto">
+        </div>
+        <div class="content">
+            <h4>localizador de casas de rescate de animales</h4>
+            <p>Descripción de tu proyecto.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h3>Contactame</h3>
+    <p>¿Te interesó mi trabajo? Podés contactarme rellenando el formulario y voy a estar
+        encantado de trabajar con vos 😊
+    </p>
+    <form id="contact-form">
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="telefono">Número de teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+        </div>
+        <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+        </div>
+        <button class="button-form" type="submit" id="enviar">Enviar</button>
+    </form>
+</section>
+
+<footer>
+    <a href="#https://www.linkedin.com/in/martinfdez-dev/" target="_blank" class="footer-link">
+        <img src="/assets/icons/github.png" alt="link a github">
+    </a>
+    <a href="#https://github.com/ParanoiidAndroid" target="_blank" class="footer-link">
+        <img src="/assets/icons/linkedin.png" alt="link a linkedIn">
+    </a>
+    <p>&copy; martinfdez-dev</p>
+</footer>
+
+    
+
+
+<script src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,308 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'CourierPrime-Regular', monospace;
+    scroll-behavior: smooth; /* Aplicar scroll suave en toda la página */
+}
+
+@font-face {
+    font-family: 'CourierPrime-Regular'; 
+    src: url('/assets/font/CourierPrime-Regular.ttf') format('ttf'); 
+}
+
+body {
+    font-family: 'CourierPrime-Regular', monospace;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.navbar {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    overflow: hidden;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.navbar a {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    display: inline-block; 
+    margin: 0 10px; 
+    font-family: 'CourierPrime-Regular', monospace;
+    
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: black;
+}
+
+.gradient-section {
+    height: 100vh;
+    background: linear-gradient(315deg, #042B6C 3%, #042B6C 38%, #191919 68%, #191919 98%, #000);
+    animation: gradient 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+    font-size: 30px;
+}
+
+/* "Dev" del h1 (probar al reves) */
+.dev-gradient {
+    background: linear-gradient(315deg, #05409E 3%, #6299F9 68%, #4075BF 98%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+
+h2 {
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+h3 {
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+h3 a {
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+/* para la prox actualizacion hacer movil first xd */
+
+.about-me {
+    text-align: center;
+    padding: 20px;
+    margin: 2;
+    background: #fff; 
+  }
+  
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .centered-paragraph {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    width: 60%; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+ /* Estilo base para las tarjetas */
+.card {
+    border: none;
+    border-radius: none;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s; 
+  }
+  
+
+  .card:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  }
+  
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .card p {
+    margin: 10px 0;
+  }
+
+  #portfolio {
+    text-align: center;
+    padding: 20px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.box {
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 20px;
+}
+
+.image {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.content {
+    flex: 2;
+    padding: 10px;
+}
+
+#contact {
+    text-align: center;
+    padding: 20px;
+    background-image: url('/assets/images/back-fornm.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff; 
+}
+
+#contact h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#contact p {
+    font-size: 16px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button-form {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-form:hover {
+    background-color: #0056b3;
+}
+
+.button-cv {
+    border: 0;
+    background-image: linear-gradient(
+        150deg,
+        #9500ff,
+        #09f,
+        #0DFF
+    );
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.button-cv span {
+    background-color: #111;
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: .3s;
+}
+
+.button-cv:hover span{
+    background: none;
+}
+
+.button-cv:active {
+    transform: scale(0.9);
+}
+
+footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-link {
+    display: inline-block;
+    margin: 10px;
+}
+
+.footer-link img {
+    width: 30px;
+    height: 30px;
+    border: 0; /* Elimina el borde predeterminado de los enlaces */
+}
